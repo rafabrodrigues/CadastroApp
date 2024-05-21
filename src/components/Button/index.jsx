@@ -1,7 +1,7 @@
 import React from 'react';
 import { TouchableOpacity, Text, StyleSheet } from 'react-native';
 
-const Button = ({text, backgroundColor}) => {
+const Button = ({text, onPress, backgroundColor}) => {
     const styles = StyleSheet.create({
         button: {
             backgroundColor: backgroundColor,
@@ -20,7 +20,7 @@ const Button = ({text, backgroundColor}) => {
     });
 
     return (
-        <TouchableOpacity style={styles.button}>
+        <TouchableOpacity style={styles.button} onPress={onPress}>
             <Text style={styles.textButton}>{text}</Text>
         </TouchableOpacity>
     );

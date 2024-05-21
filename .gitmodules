@@ -1,0 +1,3 @@
+[submodule "CadastroApp"]
+	path = CadastroApp
+	url = https://github.com/rafabrodrigues/CadastroApp.git
